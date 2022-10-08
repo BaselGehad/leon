@@ -9,6 +9,9 @@
   list-style: none;
   user-select: none;
 }
+html {
+  scroll-behavior: smooth;
+}
 :root {
   --main-color: #10cab7;
   --sec-color: #2b3c47;
@@ -117,7 +120,7 @@ header div.container nav ul li a:hover {
     position: fixed;
     top: 0;
     left: -100%;
-    background-color: var(--main-color);
+    background-color: var(--sec-color);
     height: 100vh;
     width: 70%;
     transition: left 0.5s;
@@ -130,7 +133,6 @@ header div.container nav ul li a:hover {
   }
   header div.container nav ul {
     flex-direction: column;
-    /* background-color: red; */
     height: 100%;
   }
   header div.container nav ul li {
@@ -145,8 +147,8 @@ header div.container nav ul li a:hover {
     display: none;
   }
   header div.container nav ul li a:hover {
-    color: black;
-    border-bottom: black 2px solid;
+    color: var(--main-color);
+    border-bottom: var(--main-color) 2px solid;
   }
   header div.container div.icons {
     display: block;
@@ -322,6 +324,9 @@ div.services div.container > div:last-child div:last-child::after {
   }
 }
 /* Portfolio */
+div.portfolio {
+  padding: 1rem 0;
+}
 div.portfolio div.container > div:last-child {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -369,6 +374,9 @@ div.portfolio div.container > div:last-child figure figcaption p {
   }
 }
 /* About */
+div.about {
+  padding: 1rem 0;
+}
 div.about div.container > div:last-child div img {
   background-color: red;
   width: 100%;
@@ -414,7 +422,7 @@ div.about div.container > div:last-child hr {
 /* contact */
 div.contact {
   background-color: #4d515910;
-  padding-bottom: 1.5rem;
+  padding: 1rem 0;
 }
 div.contact div.container {
   text-align: center;
