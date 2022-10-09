@@ -143,6 +143,7 @@ header div.container nav p {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    overflow: auto;
   }
   header div.container nav p {
     color: white;
